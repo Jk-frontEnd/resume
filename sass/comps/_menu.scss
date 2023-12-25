@@ -1,0 +1,48 @@
+.menu__toggle svg {
+    fill: var(--primary-light);
+}
+
+.menu__toggle {
+    display: block;
+    border: none;
+    padding: 0;
+    background: transparent;
+    margin-left: 70px;
+
+
+    @media screen and (min-width: 375px) and (max-width: 400px) {
+        margin-left: 120px;
+    }
+
+    @media screen and (min-width: 401px) and (max-width: 486px) {
+        margin-left: 150px;
+    }
+}
+
+.menu__btn {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.menu__list {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

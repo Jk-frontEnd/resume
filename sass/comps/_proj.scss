@@ -1,0 +1,44 @@
+.project__title {
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project {
+    background-color: var(--bg-dark);
+    color: var(--primary-dark);
+}
+
+.project__list {
+    gap: 28px;
+}
+
+.project__num {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 28px;
+}
+
+.project__name {
+    font-family: var(--sora);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    margin-bottom: 28px;
+}
+
+.project__desc {
+    color: var(--grey-500);
+    font-family: var(--sora);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+
+.project__icon {
+    margin-bottom: 28px;
+}
+
+.no-mrg {
+    margin: 0;
+}

@@ -1,0 +1,19 @@
+//base
+@import './base/common';
+@import './base/container';
+@import './base/reset';
+
+//vars
+@import './utils/vars';
+
+//components
+@import './comps/header';
+@import './comps/menu';
+@import './comps/hero';
+@import './comps/skills';
+@import './comps/about';
+@import './comps/review';
+@import './comps/proj';
+@import './comps/reach';
+@import './comps/int';
+@import './comps/footer'

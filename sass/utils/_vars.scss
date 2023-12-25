@@ -1,0 +1,39 @@
+:root {
+    //color variations
+    --primary-light: #000;
+    --primary-dark: #fff;
+    --accent-light: #71717A;
+
+    --grey-500:#71717A;
+
+    //#27272A
+    //#D4D4D8
+
+    --error: #c33c54;
+
+    //banana hover
+    --hover-light: #FFCF00;
+    --hover-dark: #3DD6D0;
+
+    //forest hover
+    //--hover-light: #00916E;
+    //--hover-dark: #43C59E;
+
+    //blue hover
+    //--hover-light: #48BEFF;
+    //--hover-dark: #3DD6D0;
+
+    --bg-light: #FFFFFF;
+    --bg-dark: #000000;
+
+    //fonts variations
+    --sora: 'Sora', sans-serif;
+    --basic: 'Montserrat', sans-serif;
+
+    //transition
+    --tr-color: color 350ms ease-in-out;
+    --tr-fill: fill 350ms ease-in-out;
+    --tr-border: border 350ms ease-in-out;
+    --tr-bg: background-color 350ms ease-in-out;
+    --tr-all: all 350ms ease-in-out;
+}
