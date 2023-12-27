@@ -42,3 +42,48 @@
 .no-mrg {
     margin: 0;
 }
+
+//COMING SOON STYLES
+
+.project__coming-soon {
+    background-color: var(--bg-dark);
+    color: var(--primary-dark);
+    text-align: center;
+    font-family: var(--sora);
+}
+
+.project__coming-soon-title {
+    margin-bottom: 32px;
+    text-transform: capitalize;
+}
+
+.project__coming-soon-article {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.accent-coming-soon {
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.project__coming-soon-article-second {
+    font-size: 14px;
+}
+
+.project__coming-soon-massive {
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline wavy;
+}
+
+.comming-soon__link {
+    color: var(--hover-dark);
+
+    &:hover,
+    &:focus {
+        color: var(--grey-200);
+    }
+}

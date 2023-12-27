@@ -5,50 +5,110 @@
 }
 
 .header__list {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+    display: none;
 
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    @media screen and (min-width: 486px) {
+        margin-left: 80px;
+        display: flex;
+        gap: 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        gap: 32px;
+        margin-left: 170px;
+    }
 }
 
-.header__btn {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+.header__link {
+    font-family: Sora;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-light);
+    text-decoration: none;
 
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    transition: var(--tr-color);
+    
+        &:hover,
+        &:focus {
+            color: var(--hover-light);
+        }
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    background-color: var(--bg-light);
+.download-btn__desktop {
+    display: none;
+
+        @media screen and (min-width: 1200px) {
+            position: absolute;
+            right: 44px;
+            display: flex;
+        
+            padding: 10px 20px;
+            gap: 4px;
+            align-items: center;
+        
+            border: 2px solid var(--bg-dark);
+            border-radius: 4px;
+            background-color: var(--bg-dark);
+        
+            color: var(--primary-dark);
+            font-family: var(--sora);
+            font-size: 14px;
+            font-weight: 600;
+        
+            transition: var(--tr-all);
+        
+            &:hover,
+            &:focus {
+                background-color: var(--hover-light);
+                border-color: var(--hover-light);
+            }
+        }
+}
+
+.download-btn__tablet {
+    display: none;
+
+    @media screen and (max-width: 1200px) {
+        position: absolute;
+        right: 44px;
+
+        padding: 8px;
+        display: flex;
+        fill: var(--bg-dark);
+        border: 2px solid var(--bg-dark);
+        border-radius: 4px;
+        background-color: var(--bg-dark);
+
+        color: var(--primary-dark);
+        font-family: var(--sora);
+        font-size: 14px;
+        font-weight: 600;
+
+        transition: var(--tr-all);
+
+        &:hover,
+        &:focus {
+            background-color: var(--hover-light);
+            border-color: var(--hover-light);
+        }
+    }
+
+    @media screen and (max-width: 486px) {
+        display: none;
+    }
 }
 
 nav {
     display: flex;
+    align-items: center;
 }
 
 .logo {
     color: var(--primary-light);
     font-family: var(--sora);
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 700;
 
     text-decoration: none;
 
@@ -56,5 +116,15 @@ nav {
     align-items: center;
     gap: 8px;
 
-    
+    transition: var(--tr-all);
+
+    &:hover,
+    &:focus {
+        color: var(--hover-light);
+        fill: var(--hover-light);
+    }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 24px;
+        }
 }

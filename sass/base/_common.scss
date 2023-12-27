@@ -28,3 +28,11 @@ body {
     font-family: var(--basic);
     font-style: normal;
 }
+
+section {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 60px;
+    }
+}

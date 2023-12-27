@@ -13,60 +13,81 @@
   </head>
   <body>
     <header>
-      <div class="header__container header">
+      <div class="header__container">
         <nav>
-          <a class="logo" href="./index.html">
+          <a class="logo" href="#">
             <svg class="header__svg" width="30px" height="30px">
               <use href="./sprite.svg#moon"></use>
             </svg>
             My Portfolio
           </a>
 
-          <button class="menu__toggle" type="button">
-            <svg width="36px" height="36px">
+          <button class="menu__toggle js-open-menu" type="button">
+            <svg width="30px" height="30px">
               <use href="./sprite.svg#menu"></use>
             </svg>
           </button>
 
           <ul class="header__list">
             <li class="header__item">
-              <a href="" class="header__link">About Me</a>
+              <a href="#about" class="header__link">About Me</a>
             </li>
             <li class="header__item">
-              <a href="" class="header__link">Skills</a>
+              <a href="#skills" class="header__link">Skills</a>
             </li>
             <li class="header__item">
-              <a href="" class="header__link">Project</a>
+              <a href="#projects" class="header__link">Project</a>
             </li>
             <li class="header__item">
-              <a href="" class="header__link">Contact Me</a>
+              <a href="#contact" class="header__link">Contact Me</a>
             </li>
           </ul>
-          <button type="button" class="header__btn">
+          <button type="button" class="download-btn__desktop">
             Resume
-            <svg class="header__button-svg" width="20px" height="20px">
+            <svg class="download-btn__icon" width="30px" height="30px">
+              <use href="./sprite.svg#download"></use>
+            </svg>
+          </button>
+          <button type="button" class="download-btn__tablet">
+            <svg class="download-btn__icon" width="20px" height="20px">
               <use href="./sprite.svg#download"></use>
             </svg>
           </button>
 
-          <div class="menu">
+          <div class="menu js-menu-container">
+            <button class="menu__close-btn" type="button">
+              <svg
+                class="menu__close-icon js-close-menu"
+                width="20px"
+                height="20px"
+              >
+                <use href="./sprite.svg#close"></use>
+              </svg>
+            </button>
+            <a class="logo" href="./index.html">
+              <svg class="logo__svg" width="30px" height="30px">
+                <use href="./sprite.svg#moon"></use>
+              </svg>
+              My Portfolio
+            </a>
+
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="" class="menu__item">About Me</a>
+                <a href="./index.html#about" class="menu__link">About Me</a>
               </li>
               <li class="menu__item">
-                <a href="" class="menu__item">Skills</a>
+                <a href="./index.html#skills" class="menu__link">Skills</a>
               </li>
               <li class="menu__item">
-                <a href="" class="menu__item">Project</a>
+                <a href="./index.html#projects" class="menu__link">Project</a>
               </li>
               <li class="menu__item">
-                <a href="" class="menu__item">Contact Me</a>
+                <a href="./index.html#contact" class="menu__link">Contact Me</a>
               </li>
             </ul>
-            <button type="button" class="menu__btn">
+            <button type="button" class="download-btn">
               Resume
-              <svg class="menu__button-svg" width="20px" height="20px">
+              <svg class="download-btn__icon" width="18px" height="18px">
                 <use href="./sprite.svg#download"></use>
               </svg>
             </button>
@@ -76,7 +97,7 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero" id="about">
         <div class="container">
           <img src="" alt="" />
           <h1 class="hero__title">
@@ -121,7 +142,7 @@
         </div>
       </section>
 
-      <section class="skills">
+      <section class="skills" id="skills">
         <div class="container">
           <h2 class="skills__title">My skills</h2>
           <ul class="skills__list">
@@ -289,6 +310,25 @@
         </div>
       </section>
 
+      <section class="project__coming-soon" id="projects">
+        <div class="container">
+          <h2 class="project__coming-soon-title">My Projects</h2>
+          <p class="accent-coming-soon">Sorry!</p>
+          <p class="project__coming-soon-article">
+            Right now I cannot provide you with link on my projects. <br />
+            I am still working on ths section.
+          </p>
+          <p class="project__coming-soon-article-second">
+            If you'd like to recieve more information on that or see my projects
+            you can
+            <a href="./index.html#contact" class="comming-soon__link"
+              >contact </a
+            >me personally and I'll provide you with needed information.
+          </p>
+          <p class="project__coming-soon-massive">Coming soon!</p>
+        </div>
+      </section>
+
       <section class="reviews">
         <div class="container">
           <h2 class="reviews__title">reviews</h2>
@@ -324,8 +364,9 @@
         </div>
       </section>
 
-      <section class="reach">
+      <section class="reach" id="contact">
         <div class="container">
+          <h2 class="reach__title">Contact me</h2>
           <label class="reach__label">
             <input
               class="reach__input"
@@ -383,31 +424,31 @@
               </a>
             </li>
           </ul>
-        </div>
-      </section>
 
-      <section class="intentions">
-        <div class="container">
-          <p class="intentions__highlight">
-            Let's talk for <br />
-            Something special
-          </p>
-          <p class="intentions__motives">
-            I seek to push the limits of creativity to create high-engaging,
-            user-friendly, and memorable interactive experiences.
-          </p>
-          <ul class="intentions__contacts">
-            <li class="intentions__li">
-              <a
-                class="intentions__mail"
-                href="mailto:juliakamynskaya@gmail.com"
-                >juliakamynskaya@gmail.com</a
-              >
-            </li>
-            <li>
-              <a class="intentions__tel" href="tel:+380950164751">0950164751</a>
-            </li>
-          </ul>
+          <div class="intentions">
+            <p class="intentions__highlight">
+              Let's talk for <br />
+              Something special
+            </p>
+            <p class="intentions__motives">
+              I seek to push the limits of creativity to create high-engaging,
+              user-friendly, and memorable interactive experiences.
+            </p>
+            <ul class="intentions__contacts">
+              <li class="intentions__li">
+                <a
+                  class="intentions__mail"
+                  href="mailto:juliakamynskaya@gmail.com"
+                  >juliakamynskaya@gmail.com</a
+                >
+              </li>
+              <li>
+                <a class="intentions__tel" href="tel:+380950164751"
+                  >0950164751</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
@@ -426,5 +467,7 @@
         </p>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>
