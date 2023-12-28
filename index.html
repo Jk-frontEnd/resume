@@ -22,7 +22,7 @@
             My Portfolio
           </a>
 
-          <button class="menu__toggle js-open-menu" type="button">
+          <button class="menu__toggle js-open-menu js-toggle" type="button">
             <svg width="30px" height="30px">
               <use href="./sprite.svg#menu"></use>
             </svg>
@@ -85,7 +85,7 @@
                 <a href="./index.html#contact" class="menu__link">Contact Me</a>
               </li>
             </ul>
-            <button type="button" class="download-btn">
+            <button type="button" class="download-btn__menu">
               Resume
               <svg class="download-btn__icon" width="18px" height="18px">
                 <use href="./sprite.svg#download"></use>
@@ -98,47 +98,49 @@
 
     <main>
       <section class="hero" id="about">
-        <div class="container">
-          <img src="" alt="" />
-          <h1 class="hero__title">
-            Hello I'm Julia. <br />Frontend Developer <br />Based In Ukraine.
-          </h1>
-          <p class="hero__article">
-            I'm Sagar Shah Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry's standard
-            dummy text ever since the 1500s, when an unknown printer took a
-            galley of type and scrambled it to specimen book.
-          </p>
-          <ul class="socials">
-            <li class="socials__item">
-              <a href="" class="socials__link">
-                <svg width="25px" height="25px" class="socials__icon">
-                  <use href="./sprite.svg#discord"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="" class="socials__link">
-                <svg width="25px" height="25px" class="socials__icon">
-                  <use href="./sprite.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="" class="socials__link">
-                <svg width="25px" height="25px" class="socials__icon">
-                  <use href="./sprite.svg#reddit"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="" class="socials__link">
-                <svg width="25px" height="25px" class="socials__icon">
-                  <use href="./sprite.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="hero__container container">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              Hello I'm Julia. <br />Frontend Developer <br />Based In Ukraine.
+            </h1>
+            <p class="hero__article">
+              I'm Sagar Shah Lorem Ipsum is simply dummy text of the printing
+              and typesetting industry. Lorem Ipsum has been the industry's
+              standard dummy text ever since the 1500s, when an unknown printer
+              took a galley of type and scrambled it to specimen book.
+            </p>
+            <ul class="socials">
+              <li class="socials__item">
+                <a href="" class="socials__link">
+                  <svg width="25px" height="25px" class="socials__icon">
+                    <use href="./sprite.svg#discord"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="" class="socials__link">
+                  <svg width="25px" height="25px" class="socials__icon">
+                    <use href="./sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="" class="socials__link">
+                  <svg width="25px" height="25px" class="socials__icon">
+                    <use href="./sprite.svg#reddit"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="" class="socials__link">
+                  <svg width="25px" height="25px" class="socials__icon">
+                    <use href="./sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <img class="hero__img" src="./images/moon.jpg" alt="" width="332px" />
         </div>
       </section>
 

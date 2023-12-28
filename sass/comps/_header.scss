@@ -7,7 +7,7 @@
 .header__list {
     display: none;
 
-    @media screen and (min-width: 486px) {
+    @media screen and (min-width: 480px) and (max-width: 786px) {
         margin-left: 80px;
         display: flex;
         gap: 24px;
@@ -33,6 +33,37 @@
         &:focus {
             color: var(--hover-light);
         }
+
+        @media screen and (max-width: 786px) and (max-width: 1999px) {
+            font-size: 16px;
+        }
+}
+
+.download-btn__menu {
+        display: flex;
+
+        padding: 10px 20px;
+        gap: 4px;
+        align-items: center;
+
+        border: 2px solid var(--bg-dark);
+        border-radius: 4px;
+        background-color: var(--bg-dark);
+
+        color: var(--primary-dark);
+        font-family: var(--sora);
+        font-size: 14px;
+        font-weight: 600;
+
+        transition: var(--tr-all);
+
+        &:hover,
+        &:focus,
+        &:hover svg,
+        &:focus svg {
+        background-color: var(--hover-light);
+        border-color: var(--hover-dark);
+}
 }
 
 .download-btn__desktop {
@@ -59,12 +90,15 @@
             transition: var(--tr-all);
         
             &:hover,
-            &:focus {
+            &:focus,
+            &:hover svg,
+            &:focus svg {
                 background-color: var(--hover-light);
-                border-color: var(--hover-light);
+                border-color: var(--hover-dark);
             }
         }
 }
+
 
 .download-btn__tablet {
     display: none;
@@ -94,7 +128,7 @@
         }
     }
 
-    @media screen and (max-width: 486px) {
+    @media screen and (max-width: 480px) {
         display: none;
     }
 }

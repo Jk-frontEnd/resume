@@ -13,7 +13,7 @@
     visibility: hidden;
     pointer-events: none;
 
-    @media screen and (min-width: 486px) {
+    @media screen and (min-width: 480px) {
         display: none;
     }
 }
@@ -27,8 +27,10 @@
     margin: 0;
     background-color: transparent;
     border: none;
-    margin-left: 96px;
 
+    position: fixed;
+    top: 30px;
+    right: 30px;
 
     transition: var(--tr-fill);
     
@@ -37,9 +39,8 @@
             fill: var(--hover-light);
         }
 
-        @media screen and (min-width: 486px) {
+        @media screen and (min-width: 480px) {
             display: none;
-            pointer-events: none;
         }
 }
 
@@ -93,4 +94,8 @@
 
 
     transition: var(--tr-transform);
+}
+
+.menu__scroll {
+    fill: var(--grey-500);
 }

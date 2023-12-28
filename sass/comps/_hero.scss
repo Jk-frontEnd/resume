@@ -1,11 +1,55 @@
-.hero {
-    padding-top: 40px;
+.hero__container{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) and (max-width: 1999px) {
+        flex-direction: row;        
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+}
+
+.hero__img {
+    margin: auto;
+    border: 2px solid wavy var(--bg-dark);
+    border-radius: 16px;
+    width: 332px;
+    margin-bottom: 48px;
+
+    @media screen and (min-width: 786px) and (max-width: 1999px) {
+        width: 400px;
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 484px;
+        margin-bottom: 0;
+    }
 }
 
 .hero__title {
     font-family: var(--sora);
     font-size: 26px;
     margin-bottom: 12px;
+
+    @media screen and (min-width: 768px) and (max-width: 1999px) {
+        font-size: 28px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 48px;
+        font-weight: 800;
+    }
+
 }
 
 .hero__article {
@@ -14,6 +58,15 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
+
+    @media screen and (min-width: 768px) and (max-width: 1999px) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 587px;
+    }
+    
 }
 
 //socials list
