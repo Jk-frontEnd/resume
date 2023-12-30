@@ -7,10 +7,10 @@
 .header__list {
     display: none;
 
-    @media screen and (min-width: 480px) and (max-width: 786px) {
+    @media screen and (min-width: 768px) and (max-width: 1999px) {
         margin-left: 80px;
         display: flex;
-        gap: 24px;
+        gap: 16px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -34,8 +34,12 @@
             color: var(--hover-light);
         }
 
-        @media screen and (max-width: 786px) and (max-width: 1999px) {
+        @media screen and (min-width: 480px) and (max-width: 767px) {
             font-size: 16px;
+        }
+
+        @media screen and (max-width: 768px) and (max-width: 1999px) {
+            font-size: 18px;
         }
 }
 
@@ -103,7 +107,7 @@
 .download-btn__tablet {
     display: none;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (min-width: 768px) and (max-width: 1999px) {
         position: absolute;
         right: 44px;
 
@@ -128,7 +132,7 @@
         }
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (min-width: 1200px) {
         display: none;
     }
 }

@@ -3,6 +3,12 @@
     font-size: 28px;
     margin-bottom: 20px;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 48px;
+        font-weight: 800;
+        margin-bottom: 80px;
+    }
 }
 
 .skills__list {
@@ -10,6 +16,14 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+
+    @media screen and (min-width: 767px) and (max-width: 1999px) {
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        gap: 40px;
+    }
 }
 
 .skills__link {
@@ -33,10 +47,17 @@
 
     transition: var(--tr-all);
 
+    @media screen and (min-width: 1200px) {
+        gap: 32px;
+        min-width: 186px;
+        min-height: 186px;
+    }
+
     &:hover,
     &:focus {
         fill: var(--bg-light);
         background-color: var(--primary-light);
         color: var(--bg-light);
     }
+
 }

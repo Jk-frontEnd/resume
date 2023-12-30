@@ -8,6 +8,7 @@
         justify-content: center;
         align-items: center;
         gap: 24px;
+        margin: auto;
     }
 
     @media screen and (min-width: 1200px) {
@@ -25,7 +26,7 @@
     width: 332px;
     margin-bottom: 48px;
 
-    @media screen and (min-width: 786px) and (max-width: 1999px) {
+    @media screen and (min-width: 768px) and (max-width: 1999px) {
         width: 400px;
         margin-bottom: 0;
     }
