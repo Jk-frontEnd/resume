@@ -43,21 +43,16 @@ section {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding: 40px 16px;
-}
-@media screen and (min-width: 480px) {
-  .container {
-    padding: 40px 16px;
-  }
+  padding: 40px 20px;
 }
 @media screen and (min-width: 768px) {
   .container {
-    padding: 20px 16px;
+    padding: 60px 80px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    padding: 20px 16px;
+    padding: 60px 80px;
   }
 }
 
@@ -158,7 +153,7 @@ p {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 1999px) {
+@media screen and (min-width: 768px) {
   .header__link {
     font-size: 18px;
   }
@@ -300,7 +295,7 @@ nav {
   visibility: hidden;
   pointer-events: none;
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .menu {
     display: none;
   }
@@ -315,6 +310,7 @@ nav {
   margin: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
   position: fixed;
   top: 30px;
   right: 30px;
@@ -379,6 +375,12 @@ nav {
   fill: var(--grey-500);
 }
 
+.menu__logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .hero__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -419,7 +421,7 @@ nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 24px;
+    gap: 40px;
   }
 }
 
@@ -439,6 +441,7 @@ nav {
 @media screen and (min-width: 1200px) {
   .hero__img {
     width: 484px;
+    margin: 0;
     margin-bottom: 0;
   }
 }
@@ -603,13 +606,38 @@ nav {
   line-height: 24px;
 }
 
+.about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 88px;
+}
+
 .reviews {
   text-align: center;
 }
 
 .reviews__title {
+  font-size: 28px;
   margin-bottom: 40px;
   text-transform: capitalize;
+}
+@media screen and (min-width: 1200px) {
+  .reviews__title {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 80px;
+  }
+}
+
+.reviews__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 28px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .reviews__item {
@@ -618,6 +646,12 @@ nav {
           box-shadow: 0px 8px 16px -6px rgba(24, 39, 75, 0.08), 0px 6px 8px -6px rgba(24, 39, 75, 0.12);
   border-radius: 20px;
   margin-bottom: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .reviews__item {
+    margin: 0;
+    padding: 40px;
+  }
 }
 
 .dark {
@@ -746,6 +780,29 @@ nav {
   color: var(--grey-200);
 }
 
+.reach__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 108px;
+}
+@media screen and (min-width: 768px) {
+  .reach__content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .reach__title {
   margin-bottom: 40px;
   text-align: center;
@@ -760,6 +817,7 @@ nav {
   width: 100%;
   border: 2px solid var(--primary-light);
   border-radius: 4px;
+  margin: 0;
   margin-bottom: 24px;
   -webkit-transition: var(--tr-border-color);
   transition: var(--tr-border-color);
@@ -768,6 +826,11 @@ nav {
   .reach__input {
     font-size: 16px;
     padding: 16px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .reach__input {
+    width: 500px;
   }
 }
 
@@ -834,6 +897,7 @@ nav {
   width: 100%;
   border: 2px solid var(--primary-light);
   border-radius: 4px;
+  margin: 0;
   margin-bottom: 24px;
   resize: none;
   height: 140px;
@@ -844,8 +908,14 @@ nav {
     padding: 16px 24px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .reach__help {
+    width: 500px;
+  }
+}
 
 .reach__btn {
+  margin: 0;
   padding: 12px 16px;
   font-family: var(--sora);
   font-size: 16px;
@@ -864,12 +934,49 @@ nav {
   color: var(--bg-dark);
 }
 
-.intentions__highlight {
+.reach__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+
+.reach__socials {
+  margin-top: 0;
+}
+
+.intentions {
+  max-width: 608px;
+}
+
+.intentions__title {
   font-family: var(--sora);
   font-size: 28px;
   font-style: normal;
   font-weight: 800;
   margin-bottom: 32px;
+}
+@media screen and (min-width: 1200px) {
+  .intentions__title {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
 }
 
 .intentions__motives {
@@ -880,9 +987,19 @@ nav {
   font-weight: 400;
   margin-bottom: 32px;
 }
+@media screen and (min-width: 1200px) {
+  .intentions__motives {
+    margin-bottom: 40px;
+  }
+}
 
 .intentions__li {
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .intentions__li {
+    margin-bottom: 16px;
+  }
 }
 
 .intentions__mail,
@@ -901,15 +1018,35 @@ nav {
 .intentions__tel:focus {
   color: var(--hover-light);
 }
-
-.intentions {
-  margin-top: 44px;
+@media screen and (min-width: 1200px) {
+  .intentions__mail,
+  .intentions__tel {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+  }
 }
 
 footer {
   background-color: var(--bg-dark);
   color: var(--primary-dark);
   margin: 0;
+}
+
+.footer__container {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px 16px;
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    padding: 24px 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    padding: 24px 80px;
+  }
 }
 
 .footer__logo {
@@ -937,6 +1074,13 @@ footer {
     font-size: 20px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    font-size: 20px;
+    font-weight: 700;
+    gap: 12px;
+  }
+}
 
 .footer {
   display: -webkit-box;
@@ -952,4 +1096,11 @@ footer {
   letter-spacing: 0.24px;
   text-align: end;
   margin-left: auto;
+}
+@media screen and (min-width: 1200px) {
+  .footer__copyright {
+    font-size: 16px;
+    font-weight: 600;
+    gap: 12px;
+  }
 }/*# sourceMappingURL=main.css.map */

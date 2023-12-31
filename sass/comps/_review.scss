@@ -3,8 +3,21 @@
 }
 
 .reviews__title {
+    font-size: 28px;
     margin-bottom: 40px;
     text-transform: capitalize;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 48px;
+        font-weight: 800;
+        margin-bottom: 80px;
+    }
+}
+
+.reviews__list {
+    display: flex;
+    gap: 28px;
+    justify-content: center;
 }
 
 .reviews__item {
@@ -13,6 +26,11 @@
                 0px 6px 8px -6px rgba(24, 39, 75, 0.12);
     border-radius: 20px;
     margin-bottom: 40px;
+
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+        padding: 40px;
+    }
 }
 
 .dark {

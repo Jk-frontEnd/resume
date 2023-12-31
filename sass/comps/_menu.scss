@@ -13,7 +13,7 @@
     visibility: hidden;
     pointer-events: none;
 
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: 768px) {
         display: none;
     }
 }
@@ -27,6 +27,8 @@
     margin: 0;
     background-color: transparent;
     border: none;
+
+    cursor: pointer;
 
     position: fixed;
     top: 30px;
@@ -98,4 +100,8 @@
 
 .menu__scroll {
     fill: var(--grey-500);
+}
+
+.menu__logo {
+    width: fit-content;
 }
